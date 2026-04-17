@@ -3,27 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mato Helper</title>
+  <title>Mato Helper — Blog Automation Tool</title>
   <style>
-    body { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; max-width: 700px; margin: 0 auto; padding: 60px 20px; color: #333; text-align: center; }
-    h1 { font-size: 32px; color: #2c3e50; margin-bottom: 12px; }
-    p { font-size: 16px; color: #555; line-height: 1.8; }
+    body { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #333; line-height: 1.8; }
+    h1 { font-size: 32px; color: #2c3e50; margin-bottom: 8px; text-align: center; }
+    h2 { font-size: 22px; color: #2c3e50; margin-top: 36px; border-bottom: 2px solid #ecf0f1; padding-bottom: 8px; }
+    p, li { font-size: 15px; color: #555; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 6px; }
+    .subtitle { text-align: center; color: #7f8c8d; font-size: 16px; margin-bottom: 32px; }
+    .logo { font-size: 64px; text-align: center; margin-bottom: 12px; }
+    .section { background: #f9f9f9; border-radius: 8px; padding: 20px 24px; margin: 16px 0; }
     .links { margin-top: 40px; display: flex; justify-content: center; gap: 24px; }
     .links a { font-size: 15px; color: #3498db; text-decoration: none; }
     .links a:hover { text-decoration: underline; }
-    .logo { font-size: 64px; margin-bottom: 16px; }
+    .contact { text-align: center; margin-top: 32px; padding-top: 20px; border-top: 1px solid #ecf0f1; color: #999; font-size: 14px; }
   </style>
 </head>
 <body>
 
 <div class="logo">📝</div>
 <h1>Mato Helper</h1>
-<p>블로그 자동화 도구 — Google 계정으로 로그인하여 블로그 포스팅을 자동화하세요.</p>
-<p>문의: <a href="mailto:insubwe@gmail.com">insubwe@gmail.com</a></p>
+<p class="subtitle">Blog Automation Tool for Google Blogger</p>
+
+<h2>About This Application</h2>
+<p>
+  Mato Helper is a desktop application that helps users create, manage, and publish blog posts
+  to <strong>Google Blogger (Blogspot)</strong>. It streamlines the content creation workflow
+  by automating repetitive tasks such as text generation, image handling, and post publishing.
+</p>
+
+<h2>What Does Mato Helper Do?</h2>
+<div class="section">
+  <ul>
+    <li><strong>Blog Post Creation</strong> — Generate and format blog posts with AI assistance, then publish directly to your Google Blogger account.</li>
+    <li><strong>Image Management</strong> — Upload images to Google Drive for use in blog posts, replacing embedded images with hosted URLs for better performance.</li>
+    <li><strong>Bulk Publishing</strong> — Create and publish multiple blog posts efficiently with batch processing.</li>
+    <li><strong>Draft Management</strong> — Save posts as drafts on Blogger for review before publishing.</li>
+  </ul>
+</div>
+
+<h2>Google Account Usage</h2>
+<div class="section">
+  <p>Mato Helper uses Google OAuth 2.0 to securely access your Google account. Specifically, it requests access to:</p>
+  <ul>
+    <li><strong>Google Blogger API</strong> — To create, edit, and publish blog posts on your Blogger account.</li>
+    <li><strong>Google Drive API (drive.file scope)</strong> — To upload images that are used in your blog posts. Only files created by this app are accessible; your other Drive files are not accessed.</li>
+  </ul>
+  <p>Your Google credentials are never stored on our servers. Authentication is handled entirely through Google's secure OAuth 2.0 flow.</p>
+</div>
+
+<h2>Data Privacy</h2>
+<div class="section">
+  <ul>
+    <li>We do <strong>not</strong> collect, store, or share your personal data.</li>
+    <li>All blog content is created locally on your device and published directly to your Google Blogger account.</li>
+    <li>Images are uploaded to your own Google Drive account.</li>
+    <li>No data is transmitted to third-party servers other than Google's APIs.</li>
+  </ul>
+</div>
 
 <div class="links">
-  <a href="privacy.html">개인정보처리방침</a>
-  <a href="terms.html">서비스 이용약관</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+</div>
+
+<div class="contact">
+  <p>Contact: <a href="mailto:insubwe@gmail.com">insubwe@gmail.com</a></p>
+  <p>&copy; 2025 Mato Helper. All rights reserved.</p>
 </div>
 
 </body>
