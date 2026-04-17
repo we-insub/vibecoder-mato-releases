@@ -40,6 +40,7 @@
     <li><strong>Image Management</strong> — Upload images to Google Drive for use in blog posts, replacing embedded images with hosted URLs for better performance.</li>
     <li><strong>Bulk Publishing</strong> — Create and publish multiple blog posts efficiently with batch processing.</li>
     <li><strong>Draft Management</strong> — Save posts as drafts on Blogger for review before publishing.</li>
+    <li><strong>YouTube Live Class Support</strong> — Users can watch live coding/tutorial videos and follow along in real-time. The app checks YouTube subscription status to verify class enrollment and track learning progress during live sessions.</li>
   </ul>
 </div>
 
@@ -49,6 +50,7 @@
   <ul>
     <li><strong>Google Blogger API</strong> — To create, edit, and publish blog posts on your Blogger account.</li>
     <li><strong>Google Drive API (drive.file scope)</strong> — To upload images that are used in your blog posts. Only files created by this app are accessible; your other Drive files are not accessed.</li>
+    <li><strong>YouTube Data API (youtube.readonly scope)</strong> — To verify the user's YouTube channel subscription status. This is used to confirm class enrollment so that users can participate in live tutorial sessions and track their learning progress. Only subscription status is checked; no YouTube content is modified or accessed beyond this.</li>
   </ul>
   <p>Your Google credentials are never stored on our servers. Authentication is handled entirely through Google's secure OAuth 2.0 flow.</p>
 </div>
